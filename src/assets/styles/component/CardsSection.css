@@ -1,0 +1,97 @@
+.card-section {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  padding: 20px 60px;
+}
+
+.cards-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  background-color: #12406f;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  margin: 0 10px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+}
+
+.know-more {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.know-more span {
+  font-size: 18px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: grey;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #12406f;
+}
+
+@media (max-width: 1024px) {
+  .cards-slider {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .slider-dots {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .slider-dots {
+    margin-top: 10px;
+  }
+}

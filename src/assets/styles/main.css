@@ -1,0 +1,11 @@
+@import "./default.css";
+
+/* Component css */
+@import "./component/Faq";
+@import "./component/Footer";
+@import "./component/Header";
+@import "./component/HeroSection";
+@import "./component/StatsSection";
+@import "./component/CardsSection.css";
+@import "./component/Subscribe";
+@import "./component/UpcomingExams";
